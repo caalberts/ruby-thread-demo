@@ -25,7 +25,7 @@ def api_threaded
 end
 
 def op_linear
-  p "LOCAL EXECUTION WITHOUT THREADS"
+  p "CODE EXECUTION WITHOUT THREADS"
   measure do
     2.times.map do
       start_counting
@@ -34,7 +34,7 @@ def op_linear
 end
 
 def op_threaded
-  p "LOCAL EXECUTION WITH THREADS"
+  p "CODE EXECUTION WITH THREADS"
   measure do
     2.times.map do
       Thread.new { start_counting }
